@@ -1,4 +1,3 @@
-let player_2 = 0
 input.onPinPressed(TouchPin.P0, function () {
     basic.showString("3")
     basic.showString("2")
@@ -12,15 +11,21 @@ input.onPinPressed(TouchPin.P0, function () {
     }
 })
 input.onButtonPressed(Button.A, function () {
-    player_2 = 1
-    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.playTone(659, music.beat(BeatFraction.Whole))
+    music.playTone(831, music.beat(BeatFraction.Whole))
 })
 input.onPinPressed(TouchPin.P2, function () {
 	
 })
+input.onButtonPressed(Button.B, function () {
+	
+})
 input.onPinPressed(TouchPin.P1, function () {
-    player_2 += 1
+    let player_1 = 0
+    if (player_1 == 0) {
+    	
+    }
 })
 basic.forever(function () {
-    music.playMelody("C5 B E C5 B E F A ", 120)
+	
 })
